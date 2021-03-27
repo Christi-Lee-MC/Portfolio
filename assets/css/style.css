@@ -2,8 +2,6 @@
     --primary-color:  #3853FC;
     --secondary-color: #fce138;
     --tertiary-color: #38fce1;
-    --accent-two: #E138FC;
-    --white: white;
 }
 
   * {
@@ -13,18 +11,18 @@
 }
   
 body {
-    background-color: var(--white);
+    background-color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* HEADER / NAV BAR STYLES START */
 
 header {
-    background-image: url('./assets/images/possiblehero.JPG');
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
+    background-image: opacity: 0.5;
     background-color:var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -40,9 +38,23 @@ header {
     margin: 0;
     font-size: 36px;
     color: var(--secondary-color);
-    align-items: center;
+    align-items: left;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}
   header a {
     text-decoration: none;
     color: var(--secondary-color)
@@ -108,8 +120,8 @@ footer img {
 
   /* HERO STYLES START */
 .hero {
-    background-image: url('./assets/images/possiblehero.JPG');
-    background-size: cover;
+  background-image: url('../images/smilesitgreen.JPG');
+      background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
@@ -133,6 +145,29 @@ footer img {
     color:var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+  /*hero styles end */
+
+/* section styles start*/
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color:var(--tertiary-color);
+}
+/* section styles end */
+
+
 /* add in media queries */
 @media screen and (max-width: 980px) {
   header {
