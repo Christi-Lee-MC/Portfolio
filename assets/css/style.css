@@ -3,6 +3,7 @@
     --secondary-color: #fce138;
     --tertiary-color: #38fce1;
     --accent-two: #E138FC;
+    --white: white;
 }
 
   * {
@@ -12,8 +13,11 @@
 }
   
 body {
-    background-color: ;
+    background-color: var(--white);
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+/* HEADER / NAV BAR STYLES START */
 
 header {
     background-image: url('./assets/images/possiblehero.JPG');
@@ -21,7 +25,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
-    background-color:var(--tertiary-color);
+    background-color:var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,13 +39,13 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     align-items: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header a {
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--secondary-color)
   }
   
   header nav {
@@ -65,10 +69,42 @@ header {
 
   header nav ul li a:hover {
     background: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     border-radius: 15px;
     text-shadow: none;
   }
+/* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--primary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+footer img {
+  height: 100px;
+  text-align: right;
+  justify-content: space-around
+}
+/* END FOOTER STYLES */
 
   /* HERO STYLES START */
 .hero {
@@ -98,3 +134,67 @@ header {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 /* add in media queries */
+@media screen and (max-width: 980px) {
+  header {
+  padding-bottom: 0;
+  justify-content: center; 
+  position: relative;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+header nav ul li a {
+  font-size: 20px;
+}
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+footer h2, footer div {
+  text-align: center;
+  width: 100%;
+}
+.hero-aboutme {
+  width: 100%;
+}
+
+.hero-aboutme{
+  text-align: center;
+}
+.section-title {
+  width: 80%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .section-title {
+   width: 95%;
+ }
+.intro p {
+  width: 100%;
+}
+
+.contact-info {
+  text-align: center;
+}
+.contact-info > * {
+  flex: 0 100%;
+}
+
+}
