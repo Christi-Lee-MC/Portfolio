@@ -1,0 +1,323 @@
+:root {
+    --primary-color:  #3853FC;
+    --secondary-color: #fce138;
+    --tertiary-color: #4accbb;
+}
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 20px 35px;
+    background-image: opacity: 0.5;
+    background-color:var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+    align-items: left;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}
+  header a {
+    text-decoration: none;
+    color: var(--secondary-color)
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    align-items: center; 
+    list-style: none;
+  }
+
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+/* end header / navbar styles */
+
+/* footer styles start */
+footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+footer img {
+  height: 100px;
+  text-align: left;
+  justify-content: space-around
+}
+/* END FOOTER STYLES */
+
+  /* HERO STYLES START */
+.hero {
+  background-image: url('../images/smilesitgreen.JPG');
+      background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  /* end hero styles*/
+
+  /* about styles begin */
+  .about {
+    background-color: white;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .about-container {
+    display: flex;
+    padding: 25px ;
+  }
+  .about-text {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: var (var(--tertiary-color));
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .about h2{
+    font-style: italic;
+    font-size: 55px;
+    color:var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .about-image {
+    border: 3px solid var(--secondary-color) ;
+    background-color: rgba(252, 225, 56, .8);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    
+  }
+
+/* section styles start*/
+.primary-section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--primary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.secondary-section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: var(--secondary-color);
+}
+
+.secondary-border {
+  border-color:var(--tertiary-color);
+}
+
+.intro p {
+  line-height: 1.5;
+  color:var(--tertiary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: left;
+}
+/* section styles end */
+
+/* portfoilio styles begin */
+.portfolio {
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+  
+.portfolio-container {
+  display: flex;
+}
+
+.card-current{
+  box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
+  transition: o.3s;
+  width: 40%;
+  padding: 10px 25px;
+}
+
+.card-past{
+  box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
+  transition: o.3s;
+  width: 25%;
+  padding: 10px 25px;
+}
+
+.card:hover {
+  box-shadow: o 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+
+}
+.container h4 p{
+  color: var(--secondary-color);
+}
+
+  /* portfolio styles end */
+
+/* add in media queries */
+@media screen and (max-width: 980px) {
+  header {
+  padding-bottom: 0;
+  justify-content: center; 
+  position: relative;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+header nav ul li a {
+  font-size: 20px;
+}
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+footer h2, footer div {
+  text-align: center;
+  width: 100%;
+}
+.hero-aboutme {
+  width: 100%;
+}
+
+.hero-aboutme{
+  text-align: center;
+}
+.section-title {
+  width: 80%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .section-title {
+   width: 95%;
+ }
+.intro p {
+  width: 100%;
+}
+
+.contact-info {
+  text-align: center;
+}
+.contact-info > * {
+  flex: 0 100%;
+}
+
+}
