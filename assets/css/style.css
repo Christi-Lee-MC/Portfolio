@@ -11,7 +11,7 @@
 }
   
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -132,6 +132,50 @@ footer img {
   
   /* end hero styles*/
 
+  /* about styles begin */
+  .about {
+    background-color: white;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .about-container {
+    display: flex;
+  }
+  .about-text {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: var (var(--tertiary-color));
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .about h2{
+    font-style: italic;
+    font-size: 55px;
+    color:var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .about-image {
+    border: 3px solid var(--secondary-color) ;
+    background-color: rgba(252, 225, 56, .8);
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    
+  }
+
+  
+  
+
 /* section styles start*/
 .section-title {
   font-size: 48px;
@@ -161,6 +205,29 @@ footer img {
 }
 /* section styles end */
 
+/* portfoilio styles begin */
+.card-current{
+  box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
+  transition: o.3s;
+  width: 40%;
+  padding: 10px 25px;
+}
+
+.card-past{
+  box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
+  transition: o.3s;
+  width: 25%;
+  padding: 10px 25px;
+}
+
+.card:hover {
+  box-shadow: o 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/* portfolio styles end */
 
 /* add in media queries */
 @media screen and (max-width: 980px) {
