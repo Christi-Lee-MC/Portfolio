@@ -144,6 +144,7 @@ footer img {
   }
   .about-container {
     display: flex;
+    padding: 25px ;
   }
   .about-text {
     width: 35%;
@@ -159,6 +160,7 @@ footer img {
     font-size: 55px;
     color:var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
   }
 
   .about-image {
@@ -173,14 +175,20 @@ footer img {
     
   }
 
-  
-  
-
 /* section styles start*/
-.section-title {
+.primary-section-title {
   font-size: 48px;
   border-bottom: 3px solid;
   color: var(--primary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+.secondary-section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -206,6 +214,20 @@ footer img {
 /* section styles end */
 
 /* portfoilio styles begin */
+.portfolio {
+  background-color: var(--primary-color);
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+  
+.portfolio-container {
+  display: flex;
+}
+
 .card-current{
   box-shadow: o 4px 8px 0 rgba(0,0,0,0.2);
   transition: o.3s;
@@ -226,8 +248,13 @@ footer img {
 
 .container {
   padding: 2px 16px;
+
 }
-/* portfolio styles end */
+.container h4 p{
+  color: var(--secondary-color);
+}
+
+  /* portfolio styles end */
 
 /* add in media queries */
 @media screen and (max-width: 980px) {
